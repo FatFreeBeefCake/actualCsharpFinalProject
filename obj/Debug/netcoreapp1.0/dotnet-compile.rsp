@@ -88,3 +88,8 @@
 --reference:C:\Users\Spencer\.nuget\packages\System.Xml.ReaderWriter\4.0.11\ref\netstandard1.3\System.Xml.ReaderWriter.dll
 --reference:C:\Users\Spencer\.nuget\packages\System.Xml.XDocument\4.0.11\ref\netstandard1.3\System.Xml.XDocument.dll
 C:\Users\Spencer\Documents\actualCsharpFinalProject\Program.cs
+C:\Users\Spencer\Documents\actualCsharpFinalProject\GameFunction\GameFunction.cs
+C:\Users\Spencer\Documents\actualCsharpFinalProject\GameFunction\GameStart.cs
+C:\Users\Spencer\Documents\actualCsharpFinalProject\GameFunction\LevelBase.cs
+C:\Users\Spencer\Documents\actualCsharpFinalProject\GameFunction\PlayerCreator.cs
+C:\Users\Spencer\Documents\actualCsharpFinalProject\GameFunction\WeaponSelect.cs

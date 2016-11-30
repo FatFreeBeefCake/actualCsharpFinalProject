@@ -1,7 +1,7 @@
 using System;
 
 public class WeaponSelect{
-
+public string name;
 public int Power;
 public string weaponName;
 
