@@ -31,6 +31,7 @@ public class GameStart{
 
             case GameFunction.GamePlay.End:
                 Console.WriteLine("Game Over");
+                Environment.Exit(0);
             break;
 
             case GameFunction.GamePlay.Play:
@@ -48,6 +49,8 @@ public class GameStart{
                 Play();
             break;
         }
+        Random randomNum = new Random();
+        Level.Encounter(randomNum.Next(0,Level.Enemies.Length));
     }
      public void GameTimer(){
             

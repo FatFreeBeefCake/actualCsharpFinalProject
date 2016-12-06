@@ -1,6 +1,8 @@
 using System;
 
+
 public class WeaponSelect{
+
 public string name;
 public int Power;
 public string weaponName;
@@ -12,6 +14,7 @@ public void pickWeapon(){
     switch (weaponName){
         case "Sword":
         Console.WriteLine("A Sword The mightiest of weapons.");
+        Console.WriteLine(GameFunction.list1);
         break;
 
         case "Bow":
@@ -27,6 +30,5 @@ public void pickWeapon(){
         break;
     }
 }
-
 
 }
