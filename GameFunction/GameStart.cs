@@ -11,6 +11,7 @@ public class GameStart{
        player.pickRace();
        player.whatsYourName(); 
        weapon.pickWeapon(); 
+      // GameFunction.AttackFunction();
        Play();
     }      
     private string gameFunction = "Start";
@@ -36,6 +37,7 @@ public class GameStart{
 
             case GameFunction.GamePlay.Play:
             Level.enter();
+            Level.Encounter(0);
             while (GameStart.canPlay){
                 GameTimer();
                 Play();
