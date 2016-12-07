@@ -11,7 +11,6 @@ public void whatGender(){
     Console.WriteLine("Please choose a gender");
     Console.WriteLine("Mr./Mrs.");
     yourGender = Console.ReadLine();
-
     }
     public void pickRace(){
     Console.WriteLine("What race would you like to be?");
@@ -21,12 +20,12 @@ public void whatGender(){
      switch(raceType) {
          case "Human":
          Console.WriteLine("What is Resolve?");
-         Console.WriteLine("Health: " + (resolve + 90));
+         Console.WriteLine("Health: " + (resolve + 10));
          break;
 
          case "Elf":
          Console.WriteLine("Class doesn't have a price.");
-         Console.WriteLine("Health: " + (resolve + 10));
+         Console.WriteLine("Health: " + (resolve + 90));
          break;
 
          case "Orc":
