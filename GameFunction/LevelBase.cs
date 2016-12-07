@@ -22,20 +22,24 @@ public class LevelBase{
         case 1:
         Console.WriteLine("You have been attacked by" + Enemies[i]);
         GameFunction.AttackFunction();
+        start.Play();
         break;
 
         case 2:
         Console.WriteLine("You have been attacked by" + Enemies[i]);
         GameFunction.AttackFunction();
+        start.Play();
         break;
 
         case 3:
         Console.WriteLine("You have been attacked by" + Enemies[i]);
         GameFunction.AttackFunction();
+        start.Play();
         break;
 
         default:
         Console.WriteLine("You have encountered no enemy.");
+        start.Play();
             break;
                          
         }

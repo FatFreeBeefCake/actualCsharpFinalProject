@@ -33,11 +33,15 @@ public class GameStart{
             case GameFunction.GamePlay.End:
                 Console.WriteLine("Game Over");
                 Environment.Exit(0);
+                if(player.resolve <= 0){
+                Console.WriteLine("Game Over");
+                Environment.Exit(0);
+                }
             break;
 
             case GameFunction.GamePlay.Play:
             Level.enter();
-            Level.Encounter(0);
+            Level.Encounter(2);
             while (GameStart.canPlay){
                 GameTimer();
                 Play();

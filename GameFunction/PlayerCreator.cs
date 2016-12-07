@@ -5,6 +5,7 @@ public class PlayerCreator{
 public string raceType;
 public string yourGender;
 public string name;
+public int resolve;
 
 public void whatGender(){
     Console.WriteLine("Please choose a gender");
@@ -19,19 +20,28 @@ public void whatGender(){
     
      switch(raceType) {
          case "Human":
+         Console.WriteLine("What is Resolve?");
+         Console.WriteLine("Health: " + (resolve + 90));
          break;
 
          case "Elf":
+         Console.WriteLine("Class doesn't have a price.");
+         Console.WriteLine("Health: " + (resolve + 10));
          break;
 
          case "Orc":
+         Console.WriteLine("Shouldn't you wear a shirt?");
+         Console.WriteLine("Health: " + (resolve + 100));
          break;
 
          case "Dwarf":
+         Console.WriteLine("Small body, Big Heart.");
+         Console.WriteLine("Health: " + (resolve + 50));
          break;
 
          default:
          Console.WriteLine("this is not a valid Race!");
+         pickRace();
          break;
 
      }

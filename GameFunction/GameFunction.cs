@@ -3,13 +3,13 @@ using System.Collections.Generic;
 
 public class GameFunction {
 
+public static PlayerCreator player = new PlayerCreator(); 
 public static GameStart start = new GameStart();
  public static string AttackLine;
- public static int healthBar;
 
 public static List<string> list1 = new List<string>(){"Hi","THis is a test","sup"};
-private void ChangeList (string name, int Power){
-    WeaponSelect newWeapon = new WeaponSelect();
+public void ChangeList (){
+    Console.WriteLine(list1);
 }
 public static void AttackFunction(){
     Console.WriteLine("You have encountered an enemy!");
@@ -19,7 +19,7 @@ public static void AttackFunction(){
     {
         Console.WriteLine("You have attacked the Enemy!");
         Console.WriteLine("You managed to kill the beast! but lost a little health!");
-        Console.WriteLine(healthBar - 10);
+        Console.WriteLine(player.resolve - 10);
         start.Play();
     }
 }
