@@ -10,7 +10,6 @@ public class WeaponSelect
     public int Power = 10;
     public int Strength = 10;
     public string weaponName;
-
     public void WeaponsMagic()
     {
         Console.WriteLine("Weapons Magical Abilities: ");

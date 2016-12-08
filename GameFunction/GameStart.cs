@@ -24,7 +24,7 @@ public class GameStart
         switch (toEnum)
         {
             case GameFunction.GamePlay.Start:
-                Console.WriteLine("To Continue: Play, End, Attack");
+                Console.WriteLine("To Continue: Play, End");
                 gameFunction = Console.ReadLine();
                 Console.WriteLine(gameFunction);
                 if (Enum.TryParse(gameFunction, out toEnum))
