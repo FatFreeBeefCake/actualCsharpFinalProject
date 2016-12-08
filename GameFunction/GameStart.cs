@@ -2,8 +2,6 @@ using System;
 
 public class GameStart
 {
-
-    public int health;
     private LevelBase Level = new LevelBase();
     public static PlayerCreator player = new PlayerCreator();
     public static WeaponSelect weapon = new WeaponSelect();
