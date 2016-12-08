@@ -1,4 +1,4 @@
-using System.Collections.Generic;
+/*using System.Collections.Generic;
 using System;
 
 public class List
@@ -29,4 +29,5 @@ public class List
 
     }
 }
+*/
 
