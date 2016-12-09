@@ -10,7 +10,8 @@ public class List
     {
         listofWeapons = new List<Items>();
         ChangeList("Bones", "Guts");
-        if(listofWeapons.Count == 2){
+        if (listofWeapons.Count == 2)
+        {
             start.Play();
         }
     }
@@ -22,14 +23,15 @@ public class List
         newWeapon.power = power;
         listofWeapons.Add(newWeapon);
 
-
         Items newWeapons = new Items();
         newWeapon.name = Console.ReadLine();
         newWeapon.power = Console.ReadLine();
 
+
         listofWeapons.Add(newWeapons);
 
         ChangeList("Bones", "Guts");
+
 
     }
 }
