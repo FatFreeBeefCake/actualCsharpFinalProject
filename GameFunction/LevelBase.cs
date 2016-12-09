@@ -4,6 +4,7 @@ public class LevelBase
 {
     public bool entranceOpen = true;
     public static GameStart start = new GameStart();
+    public static Return Coin = new Return();
     public int coins = 6;
     //public static List lick = new List();
 
@@ -43,6 +44,8 @@ public class LevelBase
                 GameFunction.AttackFunction();
                 itemDrop();
                 coinCount();
+                Console.WriteLine("Total Coins: ");
+                Coin.coinCount();
                 start.Play();
                 break;
 
@@ -51,6 +54,8 @@ public class LevelBase
                 GameFunction.AttackFunction();
                 itemDrop();
                 coinCount();
+                Console.WriteLine("Total Coins: ");
+                Coin.coinCount();
                 start.Play();
                 break;
 
@@ -59,6 +64,8 @@ public class LevelBase
                 GameFunction.AttackFunction();
                 itemDrop();
                 coinCount();
+                Console.WriteLine("Total Coins: ");
+                Coin.coinCount();
                 start.Play();
                 break;
 

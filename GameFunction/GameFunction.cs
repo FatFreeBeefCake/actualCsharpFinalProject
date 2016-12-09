@@ -7,8 +7,8 @@ public class GameFunction
     public static string AttackLine;
     public static int OfHits = 3;
     public static void AttackFunction()
-    
-    { 
+
+    {
         Console.WriteLine("You have encountered an enemy!");
         Console.WriteLine("Will you Attack or Run?");
         AttackLine = Console.ReadLine();
@@ -21,7 +21,10 @@ public class GameFunction
                 OfHits--;
             }
             Console.WriteLine("You managed to kill the beast! but lost a little health!");
-        }  else if (AttackLine == "Run")
+            Console.WriteLine("Health: ");
+            Health.Healthy();
+        }
+        else if (AttackLine == "Run")
         {
             Console.WriteLine("This is real life, you cant run from your problems!");
             Console.WriteLine("The Monster attacks from behind and you bleed out!");
