@@ -1,17 +1,21 @@
-/*using System.Collections.Generic;
+using System.Collections.Generic;
 using System;
 
 public class List
 {
     public List<Items> listofWeapons;
+    public GameStart start = new GameStart();
 
     public void RunList()
     {
         listofWeapons = new List<Items>();
-        ChangeList("Fred", 2);
+        ChangeList("Bones", "Guts");
+        if(listofWeapons.Count == 2){
+            start.Play();
+        }
     }
 
-    public void ChangeList(string name, int power)
+    public void ChangeList(string name, string power)
     {
         Items newWeapon = new Items();
         newWeapon.name = name;
@@ -21,13 +25,13 @@ public class List
 
         Items newWeapons = new Items();
         newWeapon.name = Console.ReadLine();
-        newWeapon.power = int.Parse(Console.ReadLine());
+        newWeapon.power = Console.ReadLine();
 
         listofWeapons.Add(newWeapons);
 
-        ChangeList("sword", 20);
+        ChangeList("Bones", "Guts");
 
     }
 }
-*/
+
 

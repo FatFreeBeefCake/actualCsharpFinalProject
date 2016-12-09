@@ -6,16 +6,17 @@ public class LevelBase
     public static GameStart start = new GameStart();
     public static Return Coin = new Return();
     public int coins = 6;
-    //public static List lick = new List();
+    public static List lists = new List();
 
     public string[] Enemies = { " a Wolf", " a Dragon", " a Land Shark", " a Demon" };
 
     public void itemDrop()
     {
         Console.WriteLine("This Monster dropped: ");
-        string[] items = new string[2];
+        string[] items = new string[3];
         items[0] = "Bones";
-        items[1] = "A bag of Coins";
+        items[1] = "Guts";
+        items[2] = "A bag of Coins";
 
         foreach (string item in items)
         {
@@ -46,6 +47,8 @@ public class LevelBase
                 coinCount();
                 Console.WriteLine("Total Coins: ");
                 Coin.coinCount();
+                Console.WriteLine("Please choose what items to take: ");
+                lists.RunList();
                 start.Play();
                 break;
 
@@ -56,6 +59,8 @@ public class LevelBase
                 coinCount();
                 Console.WriteLine("Total Coins: ");
                 Coin.coinCount();
+                Console.WriteLine("Please choose what items to take: ");
+                lists.RunList();
                 start.Play();
                 break;
 
@@ -66,6 +71,8 @@ public class LevelBase
                 coinCount();
                 Console.WriteLine("Total Coins: ");
                 Coin.coinCount();
+                Console.WriteLine("Please choose what items to take: ");
+                lists.RunList();
                 start.Play();
                 break;
 

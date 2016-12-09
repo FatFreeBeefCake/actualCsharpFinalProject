@@ -4,6 +4,7 @@ using System.Collections.Generic;
 public class GameFunction
 {
     public static Return Health = new Return();
+    public static List lists = new List();
     public static string AttackLine;
     public static int OfHits = 3;
     public static void AttackFunction()
@@ -23,6 +24,7 @@ public class GameFunction
             Console.WriteLine("You managed to kill the beast! but lost a little health!");
             Console.WriteLine("Health: ");
             Health.Healthy();
+            
         }
         else if (AttackLine == "Run")
         {

@@ -1,5 +1,5 @@
 public class Items{
     public string name;
 
-    public int power;
+    public string power;
 }
