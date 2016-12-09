@@ -8,6 +8,7 @@ public class PlayerCreator
     public string name;
     public int resolve;
 
+    public string[] facialFeature = { " a big nose.", " a small nose.", " a medium nose.", " no nose." };
     public void whatGender()
     {
         Console.WriteLine("Please choose a gender");
@@ -23,21 +24,25 @@ public class PlayerCreator
         switch (raceType)
         {
             case "Human":
+                Console.WriteLine("You have " + facialFeature[2]);
                 Console.WriteLine("What is Resolve?");
                 Console.WriteLine("Health: " + (resolve + 10));
                 break;
 
             case "Elf":
+                Console.WriteLine("You have " + facialFeature[1]);
                 Console.WriteLine("Class doesn't have a price.");
                 Console.WriteLine("Health: " + (resolve + 90));
                 break;
 
             case "Orc":
+                Console.WriteLine("You have " + facialFeature[3]);
                 Console.WriteLine("Shouldn't you wear a shirt?");
                 Console.WriteLine("Health: " + (resolve + 100));
                 break;
 
             case "Dwarf":
+                Console.WriteLine("You have " + facialFeature[0]);
                 Console.WriteLine("Small body, Big Heart.");
                 Console.WriteLine("Health: " + (resolve + 50));
                 break;

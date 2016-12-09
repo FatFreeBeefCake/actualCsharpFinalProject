@@ -10,7 +10,7 @@ Console.WriteLine(Health);
 
 int Damage (int number){
     int ret;
-    ret = number * 2;
+    ret = number - 20;
     return ret;
 }
 
