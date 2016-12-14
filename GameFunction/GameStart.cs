@@ -35,6 +35,7 @@ public class GameStart
 
             case GameFunction.GamePlay.End:
                 Console.WriteLine("Game Over");
+                Console.WriteLine(" Type (dotnet run) to play again!");
                 Environment.Exit(0);
                 break;
 

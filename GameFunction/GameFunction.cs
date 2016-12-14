@@ -24,12 +24,13 @@ public class GameFunction
             Console.WriteLine("You managed to kill the beast! but lost a little health!");
             Console.WriteLine("Health: ");
             Health.Healthy();
-            
+
         }
         else if (AttackLine == "Run")
         {
             Console.WriteLine("This is real life, you cant run from your problems!");
             Console.WriteLine("The Monster attacks from behind and you bleed out!");
+            Console.WriteLine("Argh!");
             Console.WriteLine("You Died!");
             Console.WriteLine("Game Over");
             Environment.Exit(0);

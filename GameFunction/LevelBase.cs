@@ -2,7 +2,6 @@ using System;
 
 public class LevelBase
 {
-    public bool entranceOpen = true;
     public static GameStart start = new GameStart();
     public static Return Coin = new Return();
     public int coins = 6;

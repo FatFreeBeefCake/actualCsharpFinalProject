@@ -25,7 +25,7 @@ public class PlayerCreator
         {
             case "Human":
                 Console.WriteLine("You have " + facialFeature[2]);
-                Console.WriteLine("What is Resolve?");
+                Console.WriteLine("What is your Resolve?");
                 Console.WriteLine("Health: " + (resolve + 10));
                 break;
 

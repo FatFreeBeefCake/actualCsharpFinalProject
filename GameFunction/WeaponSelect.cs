@@ -4,9 +4,6 @@ using System.Collections.Generic;
 
 public class WeaponSelect
 {
-    public static GameFunction list = new GameFunction();
-    public static List<string> list1 = new List<string>() { "Hi", "THis is a test", "sup" };
-    public string name;
     public int Power = 10;
     public int Strength = 10;
     public string weaponName;

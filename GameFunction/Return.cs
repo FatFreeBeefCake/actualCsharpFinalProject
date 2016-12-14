@@ -11,7 +11,8 @@ public class Return
         Console.WriteLine(Health);
     }
 
-    public void coinCount(){
+    public void coinCount()
+    {
         Coiny = Coins(Coiny);
         Console.WriteLine(Coiny);
 
@@ -24,7 +25,8 @@ public class Return
         return ret;
     }
 
-    int Coins(int number){
+    int Coins(int number)
+    {
         int rel;
         rel = number + 5;
         return rel;
